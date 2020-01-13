@@ -31,7 +31,6 @@ Heroku提供不同的服务级别，允许你自主选择为应用程序提供�
 ## 安装Heroku命令行客户端
 
 Heroku提供了一个名为[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)的命令行工具来与服务交互，可安装于Windows，Mac OS X和Linux。 该文档包括了支持的所有平台的安装说明。 如果你计划部署应用程序以测试该服务，请将其安装在你的系统上。
-Heroku provides a command-line tool for interacting with their service called [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), available for Windows, Mac OS X and Linux. The documentation includes installation instructions for all the supported platforms. Go ahead and install it on your system if you plan on deploying the application to test the service.
 
 安装CLI后应该做的第一件事是登录到你的Heroku帐户：
 
@@ -279,7 +278,7 @@ To https://git.heroku.com/flask-microblog.git
 
 我们在`git push`命令中使用的标签`heroku`是在创建应用程序时由Heroku CLI自动添加的远程代码库。 `deploy:master`参数意味着我将代码从本地代码库的`deploy`分支推送到Heroku代码库上的`master`分支。 当你使用自己的项目时，你可能会用`git push heroku master`命令推动你的本地`master`分支。 由于这个项目的代码库分支结构，我推送了一个非`master`的分支，但Heroku侧要求的目标分支是'master'，因为这是Heroku唯一接受部署的分支。
 
-就这样，应用程序现在应该已经部署在创建应用程序的命令的输出中给出的URL上了。 在我的案例中，URL是*https://flask-microblog.herokuapp.com*，所以这就是我需要键入和访问该应用程序的URL。
+就这样，应用程序现在应该已经部署在创建应用程序的命令的输出中给出的URL上了。 在我的案例中，URL是 *https://flask-microblog.herokuapp.com* ，所以这就是我需要键入和访问该应用程序的URL。
 
 如果你想查看正在运行的应用程序的日志，请使用`heroku logs`命令。 如果由于任何原因导致应用程序无法启动，该命令可能很有用。 如果有任何错误，将在日志中显示。
 
